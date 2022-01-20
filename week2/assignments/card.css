@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+
+:root {
+    --background-color: #ccc;
+    --heading-color: #000;
+    --primary-color: #fff;
+    --dark-gray: gray;
+    --light-gray: #8c92ac;
+    --dark-blue: #0000ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-wrapper {
+    background-color:var(--background-color);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card, .card-basic {
+    width: 22rem;
+    height: 28rem;
+    background-color: var(--primary-color);
+    border-radius:0.5rem;
+    margin: 1rem;
+    -webkit-border-radius:0.5rem;
+    -moz-border-radius:0.5rem;
+    -ms-border-radius:0.5rem;
+    -o-border-radius:0.5rem;
+    box-shadow: -3px 3px 3px gray;
+}
+
+.image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+
+.image-container img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    -webkit-border-radius: 0.5rem 0.5rem 0 0;
+    -moz-border-radius: 0.5rem 0.5rem 0 0;
+    -ms-border-radius: 0.5rem 0.5rem 0 0;
+    -o-border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    padding: 0.7rem
+}
+
+.content-container h1 {
+    font-size: 1.5rem;
+    font-weight: 500
+
+}
+
+.content-container h3 {
+    font-size: 1rem;
+    color: var(--dark-gray);
+    font-weight: 400
+}
+
+.content-container p {
+    padding-top: 1rem;
+    color: var(--light-gray);
+    font-size: 0.9rem;
+}
+
+.action-items-container {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: space-between;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content:flex-start;
+    padding: 0.7rem;
+
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    color: var(--dark-blue);
+    padding: 0.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+
+.btn:hover {
+    background-color: #eee
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    padding-left: 1.7rem;
+    font-weight: 100;
+}
+
+.heart-icon, .share-icon, .ellipsis-icon {
+    padding: 0.7rem;
+    margin-left:auto;
+    padding-top: 1.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.heart-icon:hover, .share-icon:hover, .ellipsis-icon:hover{
+    background-color:#eee
+}
+
+/* Variant styling */
+
+/* Basic Card with Text over Media */
+
+.card-text-over-media {
+    position: relative;
+    height: 24rem
+}
+
+.card-text-over-media > .content-container > h1 {
+    position: absolute;
+    top: 10rem;
+    color: var(--primary-color)
+}
+
+.card-text-over-media>.content-container > h3 {
+    position: absolute;
+    top: 12.5rem;
+    color: var(--primary-color)
+}
+
+.card-text-over-media>.content-container>p{
+    padding-top: 0.5rem;
+}
+
+/* Basic Card with Header */
+
+.card-basic-with-header {
+    height: 29rem;
+}
+
+.card-basic-with-header > .content-container > p {
+    padding-top: 0.2rem;
+}
+
+
+.card-basic-with-header > .image-container > img {
+    border-radius:0rem    ;
+    -webkit-border-radius:0rem    ;
+    -moz-border-radius:0rem    ;
+    -ms-border-radius:0rem    ;
+    -o-border-radius:0rem    ;
+}
+
+/* Card with only buttons */
+
+.card-with-buttons > .action-items-container > .icon-container,
+.card-with-icons > .action-items-container > .btn-container {
+ display:none;
+}
+
+
+/* Card with only icons */
+.card-with-icons > .action-items-container > .icon-container {
+    padding-left: 12rem;
+}
+
+/* Horizontal card with image and text */
+
+.card-horizontal {
+    width: 30rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+}
+
+.card-horizontal > .image-container {
+    width: 40%;
+}
+
+
+.card-horizontal > .content-container {
+    flex-direction: column;
+}
+
+.card-horizontal > .action-items-container {
+    position: absolute;
+    bottom: 0rem;
+}
+
+.card-horizontal > .action-items-container > .icon-container {
+    padding-left: 10rem;
+}
+
+
+
+
+
