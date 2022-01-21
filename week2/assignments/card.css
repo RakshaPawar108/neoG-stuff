@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap");
 
 :root {
     --background-color: #ccc;
@@ -10,39 +10,40 @@
     --hover-gray: #eee;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
-    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 .card-wrapper {
-    background-color:var(--background-color);
+    background-color: var(--background-color);
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.card, .card-basic {
+.card,
+.card-basic {
     width: 22rem;
     height: 28rem;
     background-color: var(--primary-color);
-    border-radius:0.5rem;
+    border-radius: 0.5rem;
     margin: 1rem;
-    -webkit-border-radius:0.5rem;
-    -moz-border-radius:0.5rem;
-    -ms-border-radius:0.5rem;
-    -o-border-radius:0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
     box-shadow: -3px 3px 3px gray;
 }
 
-.image-container{
+.image-container {
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
 }
 
 .image-container img {
@@ -56,20 +57,19 @@
 .content-container {
     display: flex;
     flex-direction: column;
-    flex-wrap:wrap;
-    padding: 0.7rem
+    flex-wrap: wrap;
+    padding: 0.7rem;
 }
 
 .content-container h1 {
     font-size: 1.5rem;
-    font-weight: 500
-
+    font-weight: 500;
 }
 
 .content-container h3 {
     font-size: 1rem;
     color: var(--dark-gray);
-    font-weight: 400
+    font-weight: 400;
 }
 
 .content-container p {
@@ -85,13 +85,12 @@
     justify-content: center;
 }
 
-.btn-container{
+.btn-container {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content:flex-start;
+    align-items: center;
+    justify-content: center;
     padding: 0.7rem;
-
 }
 
 .btn {
@@ -119,12 +118,22 @@
     align-items: center;
     justify-content: center;
     font-weight: 100;
+    text-align: center;
+    margin-left: 2.5rem;
+}
+
+.icon-container>* {
+    padding-top: 0.7rem;
 }
 
 i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    height: 2rem;
-    width: 2rem;
+    font-size: 1.3rem;
+    height: 2.6rem;
+    width: 2.6rem;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -132,8 +141,8 @@ i {
     -o-border-radius: 50%;
 }
 
-i:hover{
-    background-color:var(--hover-gray);
+i:hover {
+    background-color: var(--hover-gray);
 }
 
 /* Variant styling */
@@ -142,22 +151,22 @@ i:hover{
 
 .card-text-over-media {
     position: relative;
-    height: 24rem
+    height: 24rem;
 }
 
-.card-text-over-media > .content-container > h1 {
+.card-text-over-media>.content-container>h1 {
     position: absolute;
     top: 10rem;
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
-.card-text-over-media>.content-container > h3 {
+.card-text-over-media>.content-container>h3 {
     position: absolute;
     top: 12.5rem;
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
-.card-text-over-media>.content-container>p{
+.card-text-over-media>.content-container>p {
     padding-top: 0.5rem;
 }
 
@@ -167,30 +176,29 @@ i:hover{
     height: 29rem;
 }
 
-.card-basic-with-header > .content-container > p {
+.card-basic-with-header>.content-container>p {
     padding-top: 0.2rem;
 }
 
-
-.card-basic-with-header > .image-container > img {
-    border-radius:0rem    ;
-    -webkit-border-radius:0rem    ;
-    -moz-border-radius:0rem    ;
-    -ms-border-radius:0rem    ;
-    -o-border-radius:0rem    ;
+.card-basic-with-header>.image-container>img {
+    border-radius: 0rem;
+    -webkit-border-radius: 0rem;
+    -moz-border-radius: 0rem;
+    -ms-border-radius: 0rem;
+    -o-border-radius: 0rem;
 }
 
 /* Card with only buttons */
 
-.card-with-buttons > .action-items-container > .icon-container,
-.card-with-icons > .action-items-container > .btn-container {
- display:none;
+.card-with-buttons>.action-items-container>.icon-container,
+.card-with-icons>.action-items-container>.btn-container {
+    display: none;
 }
 
-
 /* Card with only icons */
-.card-with-icons > .action-items-container > .icon-container {
-    padding-left: 12rem;
+.card-with-icons>.action-items-container>.icon-container {
+    padding-top: 1rem;
+    padding-left: 10rem;
 }
 
 /* Horizontal card with image and text */
@@ -201,28 +209,21 @@ i:hover{
     display: flex;
     flex-direction: row;
     position: relative;
-
 }
 
-.card-horizontal > .image-container {
+.card-horizontal>.image-container {
     width: 40%;
 }
 
-
-.card-horizontal > .content-container {
+.card-horizontal>.content-container {
     flex-direction: column;
 }
 
-.card-horizontal > .action-items-container {
+.card-horizontal>.action-items-container {
     position: absolute;
     bottom: 0rem;
 }
 
-.card-horizontal > .action-items-container > .icon-container {
+.card-horizontal>.action-items-container>.icon-container {
     padding-left: 6rem;
 }
-
-
-
-
-
