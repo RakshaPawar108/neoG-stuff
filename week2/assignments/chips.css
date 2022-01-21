@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.chip-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.chips {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+.chip {
+    border: 1px solid black;
+    padding: 0.7rem;
+    margin: 0.5rem;
+    border-radius: 8em;
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    width: fit-content;
+    -webkit-border-radius: 8em;
+    -moz-border-radius: 8em;
+    -ms-border-radius: 8em;
+    -o-border-radius: 8em;
+    background-color:darkgray;
+}
+
+/* Stacked Chips */
+
+.chips-stacked {
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content: flex-start;
+    max-height: 200px;
+}
+
+/* Dynamic Chips with Input */
+
+.chip-input {
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: groove solid;
+    outline: none;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+i {
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    padding: 0.1rem;
+    cursor: pointer;
+}
