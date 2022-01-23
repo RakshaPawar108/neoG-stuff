@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="badge.css" />
+    <script
+      src="https://kit.fontawesome.com/dd0d05bba7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Badge Component</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Badges</h2>
+      <span class="badge-wrapper">
+        Text with a badge
+        <div class="badge badge-basic">4</div>
+      </span>
+      <span class="badge-wrapper">
+        Text with a large badge
+        <div class="badge badge-large">1</div>
+      </span>
+      <span class="badge-wrapper">
+        Button with a badge on the left
+        <button class="btn">
+          Action
+          <div class="badge btn-badge">8</div>
+        </button>
+      </span>
+      <span class="badge-wrapper">
+        Button toggles badge visibility
+        <button class="toggle-btn">
+          Toggle
+          <div class="badge btn-badge-toggle">7</div>
+        </button>
+      </span>
+      <span class="badge-wrapper">
+        Badge with an icon
+        <i class="fas fa-home"></i>
+          <div class="badge icon-badge">15</div>
+
+      </span>
+    </div>
+
+    <script src="badge.js"></script>
+  </body>
+</html>
