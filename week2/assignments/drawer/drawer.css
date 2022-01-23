@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.drawer-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#ccc;
+    flex-wrap: wrap;
+}
+
+.drawer {
+    background-color:#fff;
+    width: 22rem;
+    height:25rem;
+    border: 1px solid transparent;
+    margin: 2rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -3px 3px 3px gray;
+}
+
+.title-box {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.title-box h2 {
+    padding: 0.2rem;
+}
+
+.title-box h3 {
+    padding: 0.2rem;
+    color:gray;
+    font-weight: 400;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    padding: 0.5rem;
+}
+
+.drawer-item {
+    padding: 1rem;
+    margin: 0.2rem;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size:1.2rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.drawer-item i {
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+.drawer-item:hover {
+    background-color:#eee;
+}
+
+.active-item, .active-item:hover {
+    background-color:bisque
+}
+
+/* Permanent Drawer */
+
+.drawer-permanent {
+    display: grid;
+    column-gap: 0;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    margin: 2rem;
+
+}
+
+.drawer-permanent > .drawer {
+    margin:0;
+    border-right: 1px solid transparent;
+    box-shadow: none;
+    padding: 1rem;
+}
+
+.drawer-permanent > .drawer > .title-box {
+    padding: 0.2rem;
+}
+
+.drawer-content {
+    background-color:#fff;
+}
+
+.drawer-header {
+    background-color: aquamarine;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.drawer-text {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.drawer-text p{
+    padding:1rem;
+}
+
+
+
+
