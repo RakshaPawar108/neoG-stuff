@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+  margin: 2rem;
+}
+
+.snackbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  width: 30rem;
+  height: 4rem;
+  margin: 2rem;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  background-color: transparent;
+  color: #bb86fc;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+
+.close-icon {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -ms-border-radius:50%;
+  -o-border-radius:50%;
+}
+
+i {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover{
+    background-color:purple;
+    color: white;
+}
+ .close-icon-leading:hover, .close-icon-baseline:hover, .close-icon-stacked:hover{
+    background-color:gray;
+}
+
+.container-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    margin: 2rem;
+}
+
+.btn-action-baseline, .btn-action-leading, .btn-action-stacked{
+    margin:2rem;
+    padding:0.5rem;
+    font-size:1.2rem;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    background-color:#6200ee;
+    color: white;
+    cursor: pointer;
+}
+
+/* Snackbar variants */
+
+.snackbar-baseline, .snackbar-stacked{
+    position:fixed;
+    bottom:0;
+    left:50%;
+    margin:0 auto;
+    transform:translate(-50%, -50%);
+    -webkit-transform:translate(-50%, -50%);
+    -moz-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    -o-transform:translate(-50%, -50%);
+}
+
+.snackbar-leading {
+    position: fixed;
+    bottom:0;
+    margin:0;
+    transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
+    -moz-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    -o-transform:translateY(-50%);
+}
+
+.snackbar-stacked {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height:8rem;
+    width:35rem;
+}
+
+.buttons {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    align-self: flex-end;
+}
+
+.hide{
+    display: none;
+}

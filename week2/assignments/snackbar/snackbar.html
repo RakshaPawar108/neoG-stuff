@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="snackbar.css" />
+    <script
+      src="https://kit.fontawesome.com/dd0d05bba7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Snackbar Component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="snackbar">
+        Can't send photo. Retry in 5 seconds.
+        <button class="btn">Retry</button>
+        <div class="close-icon">
+          <i class="fa fa-times"></i>
+        </div>
+      </div>
+    </div>
+    <div class="container-row">
+      <button class="btn-action-baseline">Baseline</button
+      ><button class="btn-action-leading">Leading</button
+      ><button class="btn-action-stacked">Stacked</button>
+    </div>
+
+    <div class="snackbar snackbar-baseline hide">
+      Can't send photo. Retry in 5 seconds.
+      <button class="btn">Retry</button>
+      <div class="close-icon close-icon-baseline">
+        <i class="fa fa-times"></i>
+      </div>
+    </div>
+
+    <div class="snackbar snackbar-leading hide">
+      Your photo has been archived.
+      <button class="btn">Undo</button>
+      <div class="close-icon close-icon-leading">
+        <i class="fa fa-times"></i>
+      </div>
+    </div>
+
+    <div class="snackbar snackbar-stacked hide">
+      <div class="snackbar-stacked-text">
+        This item already has a label 'travel'. You can add a new label.
+      </div>
+
+      <div class="buttons">
+        <button class="btn">Retry</button>
+        <div class="close-icon close-icon-stacked">
+          <i class="fa fa-times"></i>
+        </div>
+      </div>
+    </div>
+
+    <script src="snackbar.js"></script>
+  </body>
+</html>
