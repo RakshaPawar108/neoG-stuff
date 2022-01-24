@@ -63,7 +63,7 @@ i {
     background-color:purple;
     color: white;
 }
- .close-icon-leading:hover, .close-icon-baseline:hover, .close-icon-stacked:hover{
+ .close-icon:hover, .close-icon-leading:hover, .close-icon-baseline:hover, .close-icon-stacked:hover{
     background-color:gray;
 }
 
