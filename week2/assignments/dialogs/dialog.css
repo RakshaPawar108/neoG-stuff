@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+
+/* Alert Dialog */
+
+.dialog-alert {
+    height: 15rem;
+    width: 20rem;
+    background-color: #fff;
+    margin: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.dialog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+
+.dialog-content h2 {
+    padding: 0.5rem;
+    font-weight: 500;
+}
+
+.dialog-content h3 {
+    padding: 0.5rem;
+    color:gray;
+    font-weight:400;
+}
+
+.dialog-buttons {
+    display: flex;
+    align-self: flex-end;
+    
+}
+
+.btn-action:hover{
+    background-color: #6200ee;
+    color:#fff;
+}
+
+.btn-action{
+    border:none;
+    outline:none;
+    margin:1rem;
+    padding:0.5rem;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size:1rem;
+    color:#6200ee;
+    cursor:pointer;
+}
+
+/* Simple Dialog */
+
+.dialog-simple {
+    width: 18rem;
+    height: 22rem;
+    background-color:#fff;
+    margin: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.dialog-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.dialog-item {
+    padding: 1.2rem;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size:1.2rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.dialog-item i {
+    display:inline-block;
+    margin-right:3rem;
+    font-size:2.5rem;
+}
+
+.dialog-item:hover {
+    background-color: #eee;
+}
+
+/* Confirmation Dialog */
+
+.dialog-confirmation {
+    width: 20rem;
+    height: 25rem;
+    background-color:#fff;
+    margin: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+hr {
+    color:lightgrey;
+    width: 100%;
+}
+
+.dialog-confirmation > .dialog-content {
+    height: 5rem;
+}
+
+.dialog-confirmation > .dialog-items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height:15rem;
+    overflow: auto;
+}
+
+.dialog-confirmation>.dialog-items>.dialog-item {
+    cursor:default;
+    padding:0.5rem;
+}
+
+.dialog-confirmation > .dialog-items > .dialog-item:hover {
+    background-color:transparent;
+}
+
+.radio-item {
+    height:1.5rem;
+    width:1.5rem;
+    margin-right: 1.5rem;
+}
+
+.dialog-buttons {
+    height: 5rem;
+}
