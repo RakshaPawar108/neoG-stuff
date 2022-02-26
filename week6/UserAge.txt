@@ -1,0 +1,17 @@
+# Initial State: { isAgeLessThan18: false }
+
+# Initial View
+- isAgeLessThan18? if yes, then show error, else keep error hidden.
+- View: error Hidden
+
+
+#  Event
+- Read Input.
+- Use that Input to calculate Age.
+
+# new state
+- if age < 18 then set state to { isAgeLessThan18: true }
+
+# new view
+- isAgeLessThan? if yes, then show error, else keep error hidden.
+- View: error Shown.
